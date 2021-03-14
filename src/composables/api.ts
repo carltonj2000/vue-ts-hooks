@@ -1,9 +1,11 @@
-import { ref } from "vue";
+import { Ref, ref } from "vue";
 
-export default function useApi(url: RequestInfo, options?: RequestInit) {
-  const response = ref();
+export type ApiRequest = () => Promise<void>;
 
-  const request = async () => {
+export default function useApi<T>(url: RequestInfo, options?: RequestInit) {
+  const response: Ref<T | undefined> = ref();
+
+  const request: ApiRequest = async () => {
     const res = await fetch(url, options);
     const data = await res.json();
     response.value = data;
