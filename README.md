@@ -1,24 +1,7 @@
-# vue-ts-hooks
+# Vue Typescript Hooks
 
-## Project setup
-```
-npm install
-```
+Vue Typescript Hooks
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+The code in this repo is based on the
+[Vue 3 Hooks and Type Safety with TypeScript](https://youtu.be/aJdi-uEKYAc)
+video.
